@@ -5,21 +5,21 @@
 class Zap < Formula
   desc "Terminal launcher for AI coding CLIs"
   homepage "https://ryoshkenn.github.io/zap"
-  version "1.2.1"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Ryoshkenn/zap/releases/download/v1.2.1/zap_1.2.1_macos_x86_64.tar.gz"
-      sha256 "845e307ab480c6657bba446de9c278f6500773ab95e96dd22c52d9840584ddaf"
+      url "https://github.com/Ryoshkenn/zap/releases/download/v1.3.0/zap_1.3.0_macos_x86_64.tar.gz"
+      sha256 "906fe61a02152ed4b06635e68f9ce2a5ad43ede0521460eb661022bd30d318a4"
 
       define_method(:install) do
         bin.install "zap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Ryoshkenn/zap/releases/download/v1.2.1/zap_1.2.1_macos_arm64.tar.gz"
-      sha256 "ca1a89f93b234552fc635d721f1f197123276047d8a4e464cfcc76253002d1db"
+      url "https://github.com/Ryoshkenn/zap/releases/download/v1.3.0/zap_1.3.0_macos_arm64.tar.gz"
+      sha256 "5f38ccbbb2dffac5f0064c96b9a3f969aebeff7956423d29e0b7579690b6ed0d"
 
       define_method(:install) do
         bin.install "zap"
@@ -29,15 +29,15 @@ class Zap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ryoshkenn/zap/releases/download/v1.2.1/zap_1.2.1_linux_x86_64.tar.gz"
-      sha256 "06a2c45c9b3170752ef99f43e304fee72d422bea45989b9669ea4bbb3b59cfeb"
+      url "https://github.com/Ryoshkenn/zap/releases/download/v1.3.0/zap_1.3.0_linux_x86_64.tar.gz"
+      sha256 "16e84fc7a84aa01a960ed42bd2192430fef7c321d28cbc18bb0ee891252a78a7"
       define_method(:install) do
         bin.install "zap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ryoshkenn/zap/releases/download/v1.2.1/zap_1.2.1_linux_arm64.tar.gz"
-      sha256 "22f90d5df3cd3f974f3d140b0465ecc6dd17727c4fd51046cddb303d95cbfb98"
+      url "https://github.com/Ryoshkenn/zap/releases/download/v1.3.0/zap_1.3.0_linux_arm64.tar.gz"
+      sha256 "ed59311b76c1f103d2b65a7f6df9936a235e77ecd804bceb0402713d95e5aa7f"
       define_method(:install) do
         bin.install "zap"
       end
